@@ -108,7 +108,7 @@ Example:
 
 * sudo useradd cloudgen
 
-Explanation:
+--> Explanation:
 
 Creates a new user account named cloudgen without setting a password. Additional options can be used to specify home directory, shell, etc.
 

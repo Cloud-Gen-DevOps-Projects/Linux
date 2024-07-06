@@ -8,12 +8,12 @@ User management in Linux involves the administration and control of user account
 useradd: This command is used to create a new user account from the command line. It adds the user to the system but typically requires additional options to set things like the home directory and shell.
 
 
-sudo useradd cloudgen
+* sudo useradd cloudgen
 
 adduser: Provides a more interactive way to create user accounts. It prompts for additional information such as password and user details.
 
 
-sudo adduser cloud
+* sudo adduser cloud
 
 
 # Modifying Users (usermod):
@@ -21,7 +21,7 @@ sudo adduser cloud
 usermod: This command allows administrators to modify user account attributes such as adding the user to additional groups (-aG option), changing the default shell, or altering the home directory.
 
 
-sudo usermod -aG sudo cloudgen
+* sudo usermod -aG sudo cloudgen
 
 
 # Deleting Users (userdel):
@@ -29,7 +29,7 @@ sudo usermod -aG sudo cloudgen
 userdel: Used to delete user accounts from the system. The -r option removes the user is home directory and mail spool.
 
 
-sudo userdel -r cloud
+* sudo userdel -r cloud
 
 
 #Managing User Passwords (passwd):
@@ -37,7 +37,7 @@ sudo userdel -r cloud
 passwd: Enables administrators to set or change user passwords and manage password policies like expiration and complexity.
 
 
-sudo passwd cloudgen
+* sudo passwd cloudgen
 
 
 # Managing User Groups (groupadd, groupmod, groupdel):
@@ -45,32 +45,32 @@ sudo passwd cloudgen
 groupadd: Creates a new group on the system.
 
 
-sudo groupadd developers
+* sudo groupadd developers
 
 groupmod: Modifies an existing group, such as renaming it or changing its group ID.
 
 
-sudo groupmod -n team developers
+* sudo groupmod -n team developers
 groupdel: Deletes a group from the system.
 
 
-sudo groupdel team
+* sudo groupdel team
 Listing Users and Groups (cat /etc/passwd, cat /etc/group):
 
 /etc/passwd: Contains information about user accounts on the system.
 
 
-cat /etc/passwd
+* cat /etc/passwd
 /etc/group: Contains information about groups on the system.
 
 
-cat /etc/group
+* cat /etc/group
 Switching Users (su, sudo):
 
 su: Allows switching to another user account.
 
 
-su - cloudgen
+* su - cloudgen
 sudo: Enables executing commands with superuser (root) privileges.
 
 
@@ -106,7 +106,7 @@ The useradd command is used to create a new user account on the system.
 
 Example:
 
-sudo useradd cloudgen
+* sudo useradd cloudgen
 
 Explanation:
 
@@ -118,7 +118,7 @@ The adduser command is a higher-level interface to useradd and prompts for addit
 
 Example:
 
-sudo adduser cloudgen
+* sudo adduser cloudgen
 
 
 Explanation:
@@ -132,7 +132,7 @@ The usermod command is used to modify user account attributes.
 
 Example:
 
-sudo usermod -aG sudo cloudgen
+* sudo usermod -aG sudo cloudgen
 
 
 Explanation:
@@ -145,7 +145,7 @@ The passwd command is used to change a users password or set password attributes
 
 Example:
 
-sudo passwd cloudgen
+* sudo passwd cloudgen
 
 
 Explanation:
@@ -161,7 +161,7 @@ The userdel command is used to delete a user account from the system.
 
 Example:
 
-sudo userdel -r cloudgen
+* sudo userdel -r cloudgen
 
 
 Explanation:
@@ -176,7 +176,7 @@ The groupadd command is used to create a new group on the system.
 
 Example:
 
-sudo groupadd developers
+* sudo groupadd developers
 
 
 Explanation:
@@ -189,7 +189,7 @@ The groupmod command is used to modify a groups attributes, such as renaming it.
 
 Example:
 
-sudo groupmod -n team developers
+* sudo groupmod -n team developers
 
 
 
@@ -203,7 +203,7 @@ The groupdel command is used to delete a group from the system.
 
 Example:
 
-sudo groupdel team
+* sudo groupdel team
 
 
 Explanation:
@@ -218,7 +218,7 @@ The /etc/passwd file contains information about user accounts.
 
 Example:
 
-cat /etc/passwd | grep cloudgen
+* cat /etc/passwd | grep cloudgen
 
 
 
@@ -227,13 +227,13 @@ Explanation:
 Searches for and displays details of the user cloudgen from the /etc/passwd file.
 
 
-cat /etc/group
+* cat /etc/group
 
 The /etc/group file contains information about groups.
 
 Example:
 
-cat /etc/group | grep developers
+* cat /etc/group | grep developers
 
 
 
@@ -249,7 +249,7 @@ The su command is used to switch to another user account.
 
 Example:
 
-su - cloudgen
+* su - cloudgen
 
 
 
@@ -262,7 +262,7 @@ The sudo command allows authorized users to execute commands as another user, of
 
 Example:
 
-sudo ls /root
+* sudo ls /root
 
 
 Explanation:
@@ -277,7 +277,7 @@ The passwd command is used not only to change passwords but also to set password
 
 Example:
 
-sudo passwd -x 30 cloudgen
+* sudo passwd -x 30 cloudgen
 
 Explanation:
 

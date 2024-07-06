@@ -121,7 +121,7 @@ Example:
 * sudo adduser cloudgen
 
 
-Explanation:
+-> Explanation:
 
 Interactively creates a new user account named cloudgen, prompting for password and additional details like full name, phone number, etc.
 

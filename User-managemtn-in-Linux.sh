@@ -3,7 +3,7 @@ User management in Linux involves the administration and control of user account
 
 #Key Aspects of User Management:
 
-Creating Users (useradd, adduser):
+# Creating Users (useradd, adduser):
 
 useradd: This command is used to create a new user account from the command line. It adds the user to the system but typically requires additional options to set things like the home directory and shell.
 
@@ -16,7 +16,7 @@ adduser: Provides a more interactive way to create user accounts. It prompts for
 sudo adduser cloud
 
 
-Modifying Users (usermod):
+# Modifying Users (usermod):
 
 usermod: This command allows administrators to modify user account attributes such as adding the user to additional groups (-aG option), changing the default shell, or altering the home directory.
 
@@ -24,7 +24,7 @@ usermod: This command allows administrators to modify user account attributes su
 sudo usermod -aG sudo cloudgen
 
 
-Deleting Users (userdel):
+# Deleting Users (userdel):
 
 userdel: Used to delete user accounts from the system. The -r option removes the user is home directory and mail spool.
 
@@ -32,7 +32,7 @@ userdel: Used to delete user accounts from the system. The -r option removes the
 sudo userdel -r cloud
 
 
-Managing User Passwords (passwd):
+#Managing User Passwords (passwd):
 
 passwd: Enables administrators to set or change user passwords and manage password policies like expiration and complexity.
 
@@ -40,7 +40,7 @@ passwd: Enables administrators to set or change user passwords and manage passwo
 sudo passwd cloudgen
 
 
-Managing User Groups (groupadd, groupmod, groupdel):
+# Managing User Groups (groupadd, groupmod, groupdel):
 
 groupadd: Creates a new group on the system.
 
@@ -77,7 +77,7 @@ sudo: Enables executing commands with superuser (root) privileges.
 sudo command_to_execute_as_root
 
 
-Importance of User Management:
+# Importance of User Management:
 
 Security: Proper user management ensures that only authorized users have access to the system and its resources.
 
@@ -89,7 +89,7 @@ Resource Management: Manages system resources efficiently by allocating appropri
 Auditing and Compliance: Helps in auditing user activities and maintaining compliance with organizational policies and regulations.
 
 
-Best Practices:
+# Best Practices:
 Use Strong Passwords: Encourage users to use strong passwords and enforce password policies.
 
 Least Privilege: Grant only necessary permissions to users and groups to minimize security risks.

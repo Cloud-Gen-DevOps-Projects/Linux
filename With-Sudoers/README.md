@@ -16,7 +16,7 @@ This Bash script automates the creation of a new Linux user with secure password
 
 ## 📁 File
 
-- `create_user.sh`: Main script for automated user setup and sudo provisioning
+- `create_user-with-sudoers.sh`: Main script for automated user setup and sudo provisioning
 
 ---
 
@@ -25,5 +25,5 @@ This Bash script automates the creation of a new Linux user with secure password
 > Make sure to run this script as root or with `sudo`.
 
 ```bash
-chmod +x create_user.sh
-sudo ./create_user.sh
+chmod +x create_user-with-sudoers.sh
+sudo ./create_user-with-sudoers.sh

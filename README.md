@@ -16,7 +16,7 @@ adduser: Provides a more interactive way to create user accounts. It prompts for
 * sudo adduser cloud
 
 
-# Modifying Users (usermod):
+# Modifying Users (usermod): this command used for to give permissions to particular user
 
 usermod: This command allows administrators to modify user account attributes such as adding the user to additional groups (-aG option), changing the default shell, or altering the home directory.
 

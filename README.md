@@ -1,4 +1,4 @@
-# User Management
+# User Management for Linux Admins
 User management in Linux involves the administration and control of user accounts and groups on the system. It encompasses creating new users, modifying existing users, managing user passwords and permissions, and ensuring overall security and access control within the Linux environment. Here is a detailed overview of what user management entails in Linux:
 
 #Key Aspects of User Management:
